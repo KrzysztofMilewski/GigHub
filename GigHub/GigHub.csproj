@@ -217,6 +217,10 @@
     <Compile Include="Migrations\201809071754085_PopulateGenres.Designer.cs">
       <DependentUpon>201809071754085_PopulateGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809081116007_OptimizedGigModel.cs" />
+    <Compile Include="Migrations\201809081116007_OptimizedGigModel.Designer.cs">
+      <DependentUpon>201809081116007_OptimizedGigModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -226,7 +230,9 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\FutureDate.cs" />
     <Compile Include="ViewModels\GigViewModel.cs" />
+    <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -317,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809071754085_PopulateGenres.resx">
       <DependentUpon>201809071754085_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809081116007_OptimizedGigModel.resx">
+      <DependentUpon>201809081116007_OptimizedGigModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
