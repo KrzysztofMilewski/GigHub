@@ -51,7 +51,7 @@ body {
 
 .form-control{
     font-size: 16px;
-    padding: 20px 15px;
+    height: 44px;
     border-radius: 10px;
 }
 
@@ -61,11 +61,11 @@ body {
     border-width: 2px;
 }
 
-.btn{
+/*.btn{
     font-size: 16px;
     border-radius: 8px;
     padding: 7px 25px;
-}
+}*/
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
     background-color: rgba(205,40,39,0.55);
@@ -86,4 +86,61 @@ body {
 
 .input-validation-error{
     border-color:red;
+}
+
+
+/*Page-leve styles*/
+
+.gigs{
+    list-style:none;
+    margin-top: 20px;
+}
+.gigs > li .date {
+    background:red;
+    color:white;
+    text-align:center;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.gigs > li .date .month {
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:bold;
+    padding: 2px 6px;
+}
+
+.gigs > li .date .day {
+    font-size: 20px;
+    padding: 2px 6px;
+    background: #f7f7f7;
+    color: black;
+}
+
+.gigs > li {
+    position:relative;
+    margin-bottom: 30px;
+}
+
+.gigs > li .details {
+    position:absolute;
+    top:0px;
+    left:70px;
+}
+
+.gigs > li .details .artist{
+    font-weight:bold;
+    display:block;
+}
+    .gigs > li .details .genre{
+        font-size:15px;
+    }
+
+.gigs > li .actions{
+    font-size: 15px;
+    display: none;
+}
+
+.gigs > li:hover .actions{
+    display: block;
 }

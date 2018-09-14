@@ -3,12 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GigHub.Models
 {
-    public class ExternalLoginConfirmationViewModel
-    {
-        [Required]
-        [Display(Name = "Adres e-mail")]
-        public string Email { get; set; }
-    }
 
     public class ExternalLoginListViewModel
     {
@@ -79,6 +73,10 @@ namespace GigHub.Models
         [Display(Name = "Potwierdź hasło")]
         [Compare("Password", ErrorMessage = "Hasło i jego potwierdzenie są niezgodne.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public string Name { get; set; }
     }
 
     public class ResetPasswordViewModel
